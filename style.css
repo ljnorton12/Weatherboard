@@ -1,0 +1,161 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.search-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    width: 100%;
+    text-align: left;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+}
+
+.input-container {
+    position: relative;
+}
+
+#suggestBoxElement {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.top-cities {
+    width: 100%;
+}
+
+.search-history {
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 20px;
+    width: 48%;
+}
+
+.search-history ul {
+    list-style: none; /* Remove bullet points */
+}
+
+.current-weather, .forecast {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.conditions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.weather-box {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.weather-details p {
+    margin-bottom: 15px;
+}
+
+.forecast h2 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.forecast-box {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
