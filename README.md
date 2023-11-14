@@ -30,3 +30,5 @@ THEN I am again presented with current and future conditions for that city
 Link to Github: https://github.com/ljnorton12/Weatherboard/edit/main/README.md
 
 Link to page: https://ljnorton12.github.io/Weatherboard
+
+Coding was walked thru with help of Ally Rose, as well as GPT-4 as a useful tool to debug.
