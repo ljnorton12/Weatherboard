@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -7,12 +6,12 @@ body, h1, h2, p, ul, li {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
+    background-color: #222;
+    color: #fff;
 }
 
 header {
-    background: linear-gradient(to right, #3498db, #8e44ad);
-    color: #fff;
+    background: linear-gradient(to right, #1a1a1a, #000);
     text-align: center;
     padding: 1rem;
     border-radius: 10px;
@@ -38,6 +37,7 @@ main {
 h2 {
     font-weight: bold;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 input {
@@ -46,6 +46,8 @@ input {
     margin-bottom: 10px;
     border: 1px solid #3498db;
     border-radius: 5px;
+    color: #fff;
+    background-color: #333;
 }
 
 .input-container {
@@ -57,7 +59,7 @@ input {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #444;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     z-index: 1;
@@ -66,7 +68,7 @@ input {
 .suggestion-item {
     padding: 10px;
     cursor: pointer;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555;
 }
 
 .suggestion-item:last-child {
@@ -74,7 +76,7 @@ input {
 }
 
 .suggestion-item:hover {
-    background-color: #f0f0f0;
+    background-color: #666;
 }
 
 .button {
@@ -96,7 +98,7 @@ input {
 }
 
 .search-history {
-    background-color: #ccc;
+    background-color: #444;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -109,8 +111,9 @@ input {
     list-style: none; /* Remove bullet points */
 }
 
-.current-weather, .forecast {
-    background-color: #ecf0f1;
+.current-weather,
+.forecast {
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -148,6 +151,173 @@ input {
 .forecast h2 {
     margin-top: 20px;
     font-weight: bold;
+    color: #fff;
+}
+
+.forecast-box {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(to right, #1a1a1a, #000);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.search-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    width: 100%;
+    text-align: left;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #333;
+}
+
+.input-container {
+    position: relative;
+}
+
+#suggestBoxElement {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #555;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #666;
+}
+
+.button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.top-cities {
+    width: 100%;
+}
+
+.search-history {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 20px;
+    width: 48%;
+}
+
+.search-history ul {
+    list-style: none; 
+}
+
+.current-weather,
+.forecast {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.conditions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.weather-box {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.weather-details p {
+    margin-bottom: 15px;
+}
+
+.forecast h2 {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .forecast-box {
