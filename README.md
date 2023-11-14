@@ -27,6 +27,6 @@ WHEN I click on a city in the search history
 
 THEN I am again presented with current and future conditions for that city
 
-Link to Github: [
-](https://github.com/ljnorton12/Weatherboard/edit/main/README.md)
+Link to Github: https://github.com/ljnorton12/Weatherboard/edit/main/README.md
 
+Link to page: https://ljnorton12.github.io/Weatherboard
